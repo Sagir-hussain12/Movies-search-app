@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Search App</h1>
+    </header>
+    <div class="container">
+        <!-- Search and Sorting Controls -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for movies...">
+            <select id="sort-select">
+                <option value="year-asc">Year (Ascending)</option>
+                <option value="year-desc">Year (Descending)</option>
+            </select>
+            <button id="search-button">Search</button>
+        </div>
+
+        <!-- Movie List -->
+        <ul class="movie-list" id="movie-list"></ul>
+
+        <!-- Movie Details -->
+        <div class="movie-details" id="movie-details">
+            <button class="back-button" id="back-button">Back to List</button>
+            <h2 id="movie-title"></h2>
+            <p>Year: <span id="movie-year"></span></p>
+            <p>Genre: <span id="movie-genre"></span></p>
+            <p>Director: <span id="movie-director"></span></p>
+            <p>Plot: <span id="movie-plot"></span></p>
+            <img id="movie-poster" alt="Movie Poster">
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="./script.js"></script>
